@@ -20,7 +20,7 @@ public class Login {
 	driver.navigate().to("https://adactinhotelapp.com/");
 	driver.findElement(By.id("username")).sendKeys("sindhutom");
 	driver.findElement(By.id("password")).sendKeys("Testing@123");
-	//wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+	wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 	//wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@name=\"login\"]")));
 	driver.findElement(By.xpath("//input[@name=\"login\"]")).click();
 	}
